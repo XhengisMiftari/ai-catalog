@@ -1,12 +1,56 @@
-# React + Vite
+🛍️ AI Catalog (React + Tailwind + Fuse.js)
+An AI-powered product catalog with natural language search using Fuse.js for fuzzy matching. Search by typing queries like:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+"running shoes under 100 with good reviews"
+"laptops between 700 and 900 rating at least 4"
 
-Currently, two official plugins are available:
+Built with React (Vite), Tailwind CSS, and JavaScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔧 Requirements
+Node.js v20.17+ (or newer)
 
-## Expanding the ESLint configuration
+npm v10+
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Quick Start
+bash
+Copy
+Edit
+npm install
+npm run dev
+# Open the localhost URL shown in your terminal
+📂 Project Structure
+bash
+Copy
+Edit
+src/
+  assets/         # Static assets (e.g., icons, placeholders)
+  products.js     # Sample product data
+  nlp.js          # Natural language parsing and filtering logic
+  App.jsx         # Main app UI
+  index.css       # Tailwind styles
+  main.jsx        # Entry point
+🧪 Features
+Natural Language Search (price, rating, category)
+
+Fuzzy Matching for typos and partial matches
+
+Category & Price Filters via dropdown and input
+
+Responsive Grid Layout for product cards
+
+No API calls – works fully in the browser
+
+📝 Notes
+nlp.js parses the query and applies filters before fuzzy search
+
+Mobile-first design with responsive product grid
+
+Simple placeholder for product images (can be replaced with real ones)
+
+🧰 Scripts
+bash
+Copy
+Edit
+npm run dev        # Start development server
+npm run build      # Build for production (output in /dist)
+npm run preview    # Preview the production build locally
